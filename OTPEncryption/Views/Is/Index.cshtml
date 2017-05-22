@@ -1,0 +1,64 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "InterSwitch Demo";
+}
+<div class="container">
+    <div class="row card">
+        <div class="card-title">
+
+        <h5 class="left-align blue">Payment Demo</h5>
+        </div>
+        <div class="card-content">
+            <form action="/" method="post" class="">
+               
+                <div class="row">
+                    <div class="input-field col s8">
+                        <select class="" id="card_type">
+                            <option value="">MasterCard</option>
+                            <option value="">Verve</option>
+                            <option value="">Visa</option>
+                        </select>
+                        <label>Card</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s8">
+                        <input type="text" name="number" value=""  placeholder="Card Number"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s8">
+                            <p class="row"><span class="left">Expiry Date</span> <span class="right">Cvv2</span></p>
+                        <div class="row">
+                            <div class="col s3">
+                                <select>
+                                    <option value="value">Year</option>
+                                </select>
+                                @*<label for="expiry">Expiry Date</label>*@
+                            </div>
+                            <div class="col s4">
+                                <select>
+                                    <option value="value">Month</option>
+                                </select>
+                                @*<label for="expiry">Expiry Date</label>*@
+                            </div>
+                           <div class="col s5">
+                               <input type="text" name="cvv2" value="" id="cvv2" placeholder="cvv2"/>
+                            
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field"></div>
+                </div>
+                <div class="row">
+                    <div class="input-field"></div>
+                </div>
+            </form>
+            <div class="card-action"></div>
+        </div>
+    </div>
+</div>
